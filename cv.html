@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Professional Resume</title>
+    <link rel="stylesheet" href="css/cv.css">
+</head>
+
+<body>
+    <div class="cv-container" id="cv-content">
+        <!-- Header -->
+        <header class="cv-header">
+            <h1 id="cv-name">KY NGUYEN VINH</h1>
+            <div class="cv-contact" id="cv-contact">
+                <span>Senior Software Engineer | Android | Fullstack</span>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="cv-section">
+            <h2>PROFESSIONAL SUMMARY</h2>
+            <p id="cv-summary"></p>
+        </section>
+
+        <!-- Core Skills -->
+        <section class="cv-section">
+            <h2>CORE SKILLS</h2>
+            <div id="cv-skills"></div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="cv-section">
+            <h2>WORK EXPERIENCE</h2>
+            <div id="cv-experience"></div>
+        </section>
+
+        <!-- Key Projects -->
+        <section class="cv-section">
+            <h2>KEY PROJECTS</h2>
+            <div id="cv-projects"></div>
+        </section>
+
+        <!-- Education -->
+        <section class="cv-section">
+            <h2>EDUCATION</h2>
+            <div id="cv-education"></div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="cv-section" id="cv-certifications-section">
+            <h2>CERTIFICATIONS</h2>
+            <div id="cv-certifications"></div>
+        </section>
+
+        <!-- Languages -->
+        <section class="cv-section" id="cv-languages-section">
+            <h2>LANGUAGES</h2>
+            <div id="cv-languages">
+                <p>• English - Fluent</p>
+                <p>• Vietnamese - Native</p>
+            </div>
+        </section>
+
+        <!-- Interests -->
+        <section class="cv-section" id="cv-interests-section">
+            <h2>INTERESTS</h2>
+            <div id="cv-interests">
+                <p>System Design, Performance optimization, Cloud Technologies</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="cv-actions">
+        <button class="btn btn-primary" onclick="downloadPDF()">
+            <i class="fas fa-download"></i> Download PDF
+        </button>
+        <button class="btn btn-secondary" onclick="window.print()">
+            <i class="fas fa-print"></i> Print
+        </button>
+        <a href="manage.html" class="btn btn-secondary">
+            <i class="fas fa-edit"></i> Edit Portfolio
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="js/api-client.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/cv-generator.js"></script>
+</body>
+
+</html>

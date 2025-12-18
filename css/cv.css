@@ -1,0 +1,304 @@
+/* CV Styles - Professional Resume Template */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 210mm;
+    /* A4 width */
+    min-height: 297mm;
+    /* A4 height */
+    margin: 0 auto;
+    background: white;
+    padding: 40px 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.cv-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+}
+
+.cv-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.cv-contact {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cv-contact span {
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* Sections */
+.cv-section {
+    margin-bottom: 25px;
+}
+
+.cv-section h2 {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.cv-section p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+/* Skills */
+.skill-category {
+    margin-bottom: 10px;
+}
+
+.skill-category-name {
+    font-weight: bold;
+    font-size: 11px;
+    color: #000;
+    margin-bottom: 3px;
+}
+
+.skill-list {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Experience */
+.experience-item {
+    margin-bottom: 18px;
+}
+
+.experience-header {
+    margin-bottom: 5px;
+}
+
+.experience-title {
+    font-weight: bold;
+    font-size: 11px;
+    color: #000;
+}
+
+.experience-company {
+    font-size: 11px;
+    color: #555;
+    font-style: italic;
+}
+
+.experience-date {
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.experience-description {
+    font-size: 11px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.experience-highlights {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-highlights li {
+    font-size: 10px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 3px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.experience-highlights li:before {
+    content: "–";
+    position: absolute;
+    left: 0;
+}
+
+.experience-tech {
+    font-size: 10px;
+    color: #777;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Projects */
+.project-item {
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 11px;
+    color: #000;
+    margin-bottom: 3px;
+}
+
+.project-description {
+    font-size: 10px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.project-highlights {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-highlights li {
+    font-size: 10px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 2px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.project-highlights li:before {
+    content: "–";
+    position: absolute;
+    left: 0;
+}
+
+.project-tech {
+    font-size: 10px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Education */
+.education-item {
+    margin-bottom: 12px;
+}
+
+.education-degree {
+    font-weight: bold;
+    font-size: 11px;
+    color: #000;
+}
+
+.education-school {
+    font-size: 11px;
+    color: #555;
+    font-style: italic;
+}
+
+.education-date {
+    font-size: 10px;
+    color: #777;
+}
+
+/* Certifications */
+.certification-item {
+    margin-bottom: 8px;
+}
+
+.certification-item p {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 3px;
+}
+
+/* Action Buttons */
+.cv-actions {
+    max-width: 210mm;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: white;
+    color: #333;
+    border: 2px solid #ddd;
+}
+
+.btn-secondary:hover {
+    background: #f5f5f5;
+    border-color: #667eea;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        margin: 0;
+        padding: 20mm 15mm;
+    }
+
+    .cv-actions {
+        display: none;
+    }
+
+    .cv-section {
+        page-break-inside: avoid;
+    }
+}
+
+/* Page Break Control */
+.page-break {
+    page-break-after: always;
+}
+
+.no-break {
+    page-break-inside: avoid;
+}

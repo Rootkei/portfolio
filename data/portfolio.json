@@ -1,0 +1,252 @@
+{
+  "personal": {
+    "name": "Nguyen Vinh Ky",
+    "title": "Full Stack Developer",
+    "tagline": "Building amazing web experiences with modern technologies",
+    "bio": "Passionate developer with expertise in creating scalable web applications. I love solving complex problems and turning ideas into reality through clean, efficient code.",
+    "photo": "https://via.placeholder.com/300",
+    "email": "info.vinhky@gmail.com",
+    "phone": "+84 123 456 789",
+    "location": "Ho Chi Minh City, Vietnam",
+    "resume": "#"
+  },
+  "social": [
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://linkedin.com/in/yourprofile"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/yourusername"
+    },
+    {
+      "name": "Twitter",
+      "icon": "twitter",
+      "url": "https://twitter.com/yourusername"
+    },
+    {
+      "name": "Email",
+      "icon": "email",
+      "url": "mailto:your.email@example.com"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Tech Company Inc.",
+      "position": "Senior Full Stack Developer",
+      "location": "Ho Chi Minh City, Vietnam",
+      "startDate": "2022-01",
+      "endDate": "Present",
+      "current": true,
+      "description": "Leading development of enterprise web applications using React, Node.js, and AWS. Mentoring junior developers and implementing best practices.",
+      "highlights": [
+        "Architected and deployed microservices handling 1M+ requests/day",
+        "Reduced application load time by 60% through optimization",
+        "Led team of 5 developers in agile environment"
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "AWS",
+        "PostgreSQL",
+        "Docker"
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Startup XYZ",
+      "position": "Full Stack Developer",
+      "location": "Remote",
+      "startDate": "2020-06",
+      "endDate": "2021-12",
+      "current": false,
+      "description": "Developed and maintained multiple web applications for clients across various industries.",
+      "highlights": [
+        "Built 10+ responsive web applications from scratch",
+        "Implemented CI/CD pipelines reducing deployment time by 80%",
+        "Collaborated with designers to create pixel-perfect UIs"
+      ],
+      "technologies": [
+        "Vue.js",
+        "Express",
+        "MongoDB",
+        "Firebase"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "school": "University of Technology",
+      "degree": "Bachelor of Computer Science",
+      "field": "Software Engineering",
+      "location": "Ho Chi Minh City, Vietnam",
+      "startDate": "2016-09",
+      "endDate": "2020-06",
+      "gpa": "3.8/4.0",
+      "description": "Focused on software engineering, algorithms, and web development. Active member of coding club."
+    }
+  ],
+  "skills": {
+    "Frontend": [
+      {
+        "name": "React",
+        "level": 90
+      },
+      {
+        "name": "Vue.js",
+        "level": 85
+      },
+      {
+        "name": "JavaScript/TypeScript",
+        "level": 95
+      },
+      {
+        "name": "HTML/CSS",
+        "level": 95
+      },
+      {
+        "name": "TailwindCSS",
+        "level": 90
+      }
+    ],
+    "Backend": [
+      {
+        "name": "Node.js",
+        "level": 90
+      },
+      {
+        "name": "Express",
+        "level": 85
+      },
+      {
+        "name": "Python",
+        "level": 75
+      },
+      {
+        "name": "PostgreSQL",
+        "level": 80
+      },
+      {
+        "name": "MongoDB",
+        "level": 85
+      }
+    ],
+    "DevOps": [
+      {
+        "name": "Docker",
+        "level": 80
+      },
+      {
+        "name": "AWS",
+        "level": 75
+      },
+      {
+        "name": "CI/CD",
+        "level": 85
+      },
+      {
+        "name": "Git",
+        "level": 95
+      }
+    ],
+    "Other": [
+      {
+        "name": "REST API",
+        "level": 90
+      },
+      {
+        "name": "GraphQL",
+        "level": 75
+      },
+      {
+        "name": "Agile/Scrum",
+        "level": 85
+      },
+      {
+        "name": "UI/UX Design",
+        "level": 70
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
+      "image": "https://via.placeholder.com/600x400",
+      "technologies": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe",
+        "AWS"
+      ],
+      "github": "https://github.com/yourusername/ecommerce",
+      "demo": "https://demo-ecommerce.com",
+      "featured": true,
+      "highlights": [
+        "Handles 10,000+ products",
+        "Integrated Stripe payment gateway",
+        "Real-time inventory tracking"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "AI Chat Application",
+      "description": "Real-time chat application with AI-powered responses using Groq API and WebSocket.",
+      "image": "https://via.placeholder.com/600x400",
+      "technologies": [
+        "Next.js",
+        "WebSocket",
+        "Groq API",
+        "TailwindCSS"
+      ],
+      "github": "https://github.com/yourusername/ai-chat",
+      "demo": "https://demo-ai-chat.com",
+      "featured": true,
+      "highlights": [
+        "Real-time messaging with WebSocket",
+        "AI-powered chat responses",
+        "Modern glassmorphism UI"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Task Management System",
+      "description": "Collaborative task management tool with drag-and-drop interface and team collaboration features.",
+      "image": "https://via.placeholder.com/600x400",
+      "technologies": [
+        "Vue.js",
+        "Firebase",
+        "Vuex",
+        "Vuetify"
+      ],
+      "github": "https://github.com/yourusername/task-manager",
+      "demo": "https://demo-tasks.com",
+      "featured": false,
+      "highlights": [
+        "Drag-and-drop kanban board",
+        "Real-time collaboration",
+        "Team analytics dashboard"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer",
+      "issuer": "Amazon Web Services",
+      "date": "2023-05",
+      "url": "#"
+    },
+    {
+      "name": "Professional Scrum Master I",
+      "issuer": "Scrum.org",
+      "date": "2022-08",
+      "url": "#"
+    }
+  ]
+}

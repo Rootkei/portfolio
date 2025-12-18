@@ -1,0 +1,225 @@
+{
+  "personal": {
+    "name": "Nguyen Vinh Ky123",
+    "title": "Software Engineer",
+    "tagline": "Building amazing web experiences with modern technologies",
+    "bio": "Passionate developer with expertise in creating scalable web applications. I love solving complex problems and turning ideas into reality through clean, efficient code.",
+    "photo": "https://avatars.githubusercontent.com/u/91526038?s=400\u0026u=a2ab3778eef0a753cf85e2a4ad00a1717e8f6918\u0026v=4",
+    "email": "info.vinhky@gmail.com",
+    "phone": "+84 123 456 789",
+    "location": "District 7, Ho Chi Minh City, Vietnam",
+    "resume": "#"
+  },
+  "social": [
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://linkedin.com/in/yourprofile"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/yourusername"
+    },
+    {
+      "name": "Twitter",
+      "icon": "twitter",
+      "url": "https://twitter.com/yourusername"
+    },
+    {
+      "name": "Email",
+      "icon": "email",
+      "url": "mailto:your.email@example.com"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1765963724844,
+      "company": "FPT IS",
+      "position": "Software Engineer",
+      "location": "",
+      "startDate": "2024-05",
+      "endDate": "Present",
+      "current": true,
+      "description": "",
+      "highlights": [],
+      "technologies": []
+    },
+    {
+      "id": 1765963725183,
+      "company": "Titan Technology Corporation",
+      "position": "Software Engineer",
+      "location": "",
+      "startDate": "2022-01",
+      "endDate": "2024-01",
+      "current": false,
+      "description": "",
+      "highlights": [],
+      "technologies": []
+    }
+  ],
+  "education": [
+    {
+      "id": 1765963725302,
+      "school": "Vietnam National University HCMC An Giang University",
+      "degree": "2019 - 2023",
+      "field": "",
+      "location": "",
+      "startDate": "2019-01",
+      "endDate": "2023-01",
+      "gpa": "",
+      "description": ""
+    }
+  ],
+  "skills": {
+    "Backend": [
+      {
+        "name": "Node.js",
+        "level": 90
+      },
+      {
+        "name": "Express",
+        "level": 85
+      },
+      {
+        "name": "Python",
+        "level": 75
+      },
+      {
+        "name": "PostgreSQL",
+        "level": 80
+      },
+      {
+        "name": "MongoDB",
+        "level": 85
+      }
+    ],
+    "DevOps": [
+      {
+        "name": "Docker",
+        "level": 80
+      },
+      {
+        "name": "AWS",
+        "level": 75
+      },
+      {
+        "name": "CI/CD",
+        "level": 85
+      },
+      {
+        "name": "Git",
+        "level": 95
+      }
+    ],
+    "Frontend": [
+      {
+        "name": "React",
+        "level": 90
+      },
+      {
+        "name": "Vue.js",
+        "level": 85
+      },
+      {
+        "name": "JavaScript/TypeScript",
+        "level": 95
+      },
+      {
+        "name": "HTML/CSS",
+        "level": 95
+      },
+      {
+        "name": "TailwindCSS",
+        "level": 90
+      }
+    ],
+    "Other": [
+      {
+        "name": "REST API",
+        "level": 90
+      },
+      {
+        "name": "GraphQL",
+        "level": 75
+      },
+      {
+        "name": "Agile/Scrum",
+        "level": 85
+      },
+      {
+        "name": "UI/UX Design",
+        "level": 70
+      }
+    ],
+    "Technical Skills": [
+      {
+        "name": "JavaScript",
+        "level": 80
+      },
+      {
+        "name": "Design Patterns",
+        "level": 80
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
+      "image": "https://via.placeholder.com/600x400",
+      "technologies": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe",
+        "AWS"
+      ],
+      "github": "https://github.com/yourusername/ecommerce",
+      "demo": "https://demo-ecommerce.com",
+      "featured": true,
+      "highlights": [
+        "Handles 10,000+ products",
+        "Integrated Stripe payment gateway",
+        "Real-time inventory tracking"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "AI Chat Application",
+      "description": "Real-time chat application with AI-powered responses using Groq API and WebSocket.",
+      "image": "https://via.placeholder.com/600x400",
+      "technologies": [
+        "Next.js",
+        "WebSocket",
+        "Groq API",
+        "TailwindCSS"
+      ],
+      "github": "https://github.com/yourusername/ai-chat",
+      "demo": "https://demo-ai-chat.com",
+      "featured": true,
+      "highlights": [
+        "Real-time messaging with WebSocket",
+        "AI-powered chat responses",
+        "Modern glassmorphism UI"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Task Management System 123",
+      "description": "Collaborative task management tool with drag-and-drop interface and team collaboration features.",
+      "image": "https://via.placeholder.com/600x400",
+      "technologies": [
+        "Vue.js",
+        "Firebase",
+        "Vuex",
+        "Vuetify"
+      ],
+      "github": "https://github.com/yourusername/task-manager",
+      "demo": "https://demo-tasks.com",
+      "featured": false
+    }
+  ],
+  "certifications": []
+}

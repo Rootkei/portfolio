@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Admin Panel</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .admin-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            min-height: 100vh;
+        }
+
+        .admin-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+            padding-top: var(--spacing-3xl);
+        }
+
+        .admin-header h1 {
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .admin-actions {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            margin-bottom: var(--spacing-2xl);
+            flex-wrap: wrap;
+        }
+
+        .editor-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .editor-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(var(--glass-blur));
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-xl);
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .editor-panel h2 {
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-accent-primary);
+        }
+
+        .json-editor {
+            flex: 1;
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            font-family: var(--font-family-mono);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-primary);
+            resize: none;
+            overflow: auto;
+        }
+
+        .json-editor:focus {
+            outline: 2px solid var(--color-accent-primary);
+        }
+
+        .preview-frame {
+            flex: 1;
+            background: var(--color-bg-primary);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .status-message {
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-lg);
+            display: none;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .status-message.success {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--color-success);
+            color: var(--color-success);
+            display: flex;
+        }
+
+        .status-message.error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--color-error);
+            color: var(--color-error);
+            display: flex;
+        }
+
+        .form-section {
+            background: var(--glass-bg);
+            backdrop-filter: blur(var(--glass-blur));
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .form-section h3 {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-accent-primary);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-text-secondary);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--spacing-md);
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            color: var(--color-text-primary);
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-base);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: 2px solid var(--color-accent-primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .file-input-wrapper input[type=file] {
+            position: absolute;
+            left: -9999px;
+        }
+
+        @media (max-width: 1024px) {
+            .editor-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1 class="text-gradient">Portfolio Admin Panel</h1>
+            <p class="section-subtitle">Edit your portfolio data</p>
+        </div>
+
+        <div id="statusMessage" class="status-message"></div>
+
+        <div class="admin-actions">
+            <button class="btn btn-primary" id="saveBtn">
+                <i class="fas fa-save"></i> Save Changes
+            </button>
+            <button class="btn btn-secondary" id="exportBtn">
+                <i class="fas fa-download"></i> Export JSON
+            </button>
+            <div class="file-input-wrapper">
+                <button class="btn btn-secondary">
+                    <i class="fas fa-upload"></i> Import JSON
+                </button>
+                <input type="file" id="importFile" accept=".json">
+            </div>
+            <button class="btn btn-secondary" id="resetBtn">
+                <i class="fas fa-undo"></i> Reset
+            </button>
+            <a href="index.html" class="btn btn-secondary">
+                <i class="fas fa-eye"></i> View Portfolio
+            </a>
+        </div>
+
+        <div class="editor-container">
+            <div class="editor-panel">
+                <h2><i class="fas fa-code"></i> JSON Editor</h2>
+                <textarea id="jsonEditor" class="json-editor" spellcheck="false"></textarea>
+            </div>
+            <div class="editor-panel">
+                <h2><i class="fas fa-eye"></i> Preview</h2>
+                <iframe id="previewFrame" class="preview-frame" src="index.html"></iframe>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3><i class="fas fa-info-circle"></i> Quick Tips</h3>
+            <ul style="color: var(--color-text-secondary); line-height: 1.8;">
+                <li>Edit the JSON directly in the editor on the left</li>
+                <li>Click "Save Changes" to update the portfolio.json file (saves to localStorage)</li>
+                <li>Use "Export JSON" to download your data</li>
+                <li>Use "Import JSON" to load data from a file</li>
+                <li>The preview will update when you save changes</li>
+                <li>Make sure your JSON is valid before saving</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data-loader.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
